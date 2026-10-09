@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8cba1bd6c3af4310aa55f3ddd4013163" label="Maintenance Task" max_length="40" name="x_2053322_smartnes_task" type="collection">
+        <element label="Task Type" max_length="100" name="task_type" type="string"/>
+        <element label="Assigned Vendor" max_length="32" name="vendor_ref" reference="x_2053322_smartnes_vendor" type="reference"/>
+        <element label="Technician Name" max_length="100" name="technician" type="string"/>
+        <element label="Actual Cost" max_length="50" name="actual_cost" type="string"/>
+        <element label="Related Complaint ID" max_length="32" name="complaint_ref" type="string"/>
+        <element label="Resolution Notes" max_length="4000" name="resolution_notes" type="string"/>
+        <element label="Vendor Notes" max_length="4000" name="vendor_notes" type="string"/>
+        <element label="Rejection Reason" max_length="1000" name="rejection_reason" type="string"/>
+        <element label="Related Asset ID" max_length="32" name="asset_ref" type="string"/>
+        <element label="Status" max_length="20" name="status" type="string"/>
+        <element label="Completion Time" max_length="40" name="completion_time" type="glide_date_time"/>
+        <element label="Invoice Reference" max_length="100" name="invoice_ref" type="string"/>
+        <index name="index">
+            <element name="vendor_ref"/>
+        </index>
+    </element>
+</database>

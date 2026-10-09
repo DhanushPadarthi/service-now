@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d7aad7d6c3af4310aa55f3ddd4013168" label="Asset" max_length="40" name="x_2053322_smartnes_asset" type="collection">
+        <element label="Location" max_length="100" name="location" type="string"/>
+        <element label="Last Maintenance Date" max_length="40" name="last_maintenance" type="string"/>
+        <element label="Maintenance Frequency (Days)" max_length="40" name="maintenance_frequency_days" type="integer"/>
+        <element label="Recurring Failure Risk" max_length="40" name="recurring_failure_risk" type="boolean"/>
+        <element label="Recurring Failure Risk" max_length="40" name="failure_risk" type="boolean"/>
+        <element label="Asset Type" max_length="100" name="type" type="string"/>
+        <element label="Status" max_length="20" name="status" type="string"/>
+        <element label="Asset Name" max_length="100" name="name" type="string"/>
+        <element label="Maintenance Enabled" max_length="40" name="maintenance_enabled" type="boolean"/>
+        <element label="QR Token" max_length="100" name="qr_token" type="string"/>
+        <element label="Next Maintenance Date" max_length="40" name="next_maintenance" type="glide_date_time"/>
+    </element>
+</database>

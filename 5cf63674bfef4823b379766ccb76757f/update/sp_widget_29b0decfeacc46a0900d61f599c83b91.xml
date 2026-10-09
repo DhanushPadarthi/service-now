@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category/>
+        <client_script/>
+        <controller_as/>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>smartnest_widget</id>
+        <internal>false</internal>
+        <link/>
+        <name>SmartNest Home Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script/>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:10:25</sys_created_on>
+        <sys_id>29b0decfeacc46a0900d61f599c83b91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SmartNest Home Widget</sys_name>
+        <sys_package display_value="smartnest" source="x_2053322_smartnes">5cf63674bfef4823b379766ccb76757f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="smartnest">5cf63674bfef4823b379766ccb76757f</sys_scope>
+        <sys_update_name>sp_widget_29b0decfeacc46a0900d61f599c83b91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 05:10:25</sys_updated_on>
+        <template><![CDATA[
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: white; height: 100vh; text-align: center; padding-top: 100px; margin: -15px;">
+  <h1 style="color: #38bdf8; font-size: 3em;">Welcome to SmartNest</h1>
+  <p style="color: #cbd5e1; font-size: 1.2em; margin-bottom: 40px;">Intelligent Society Operations & Maintenance Platform</p>
+  
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 0 50px;">
+    <a href="/x_2053322_smartnes_smartnest_resident.do" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 16px; width: 20%; min-width: 200px; cursor: pointer; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.3);">
+      <h3 style="color: #e0f2fe; margin-top: 0;">Resident Portal</h3>
+      <p style="font-size: 0.9em; margin-bottom: 0;">Raise complaints & track progress</p>
+    </a>
+    <a href="/x_2053322_smartnes_smartnest_manager.do" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 16px; width: 20%; min-width: 200px; cursor: pointer; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.3);">
+      <h3 style="color: #e0f2fe; margin-top: 0;">Facility Manager</h3>
+      <p style="font-size: 0.9em; margin-bottom: 0;">Monitor SLAs & assign tasks</p>
+    </a>
+    <a href="/x_2053322_smartnes_smartnest_technician.do" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 16px; width: 20%; min-width: 200px; cursor: pointer; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.3);">
+      <h3 style="color: #e0f2fe; margin-top: 0;">Technician App</h3>
+      <p style="font-size: 0.9em; margin-bottom: 0;">View tasks & update status</p>
+    </a>
+    <a href="/now/nav/ui/home" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 16px; width: 20%; min-width: 200px; cursor: pointer; color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.3);">
+      <h3 style="color: #e0f2fe; margin-top: 0;">Platform Admin</h3>
+      <p style="font-size: 0.9em; margin-bottom: 0;">System config & backend</p>
+    </a>
+  </div>
+</div>
+        ]]></template>
+    </sp_widget>
+</record_update>

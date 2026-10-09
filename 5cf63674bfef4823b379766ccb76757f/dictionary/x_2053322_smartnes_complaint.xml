@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="73aad7d6c3af4310aa55f3ddd40131f5" label="Complaint" max_length="40" name="x_2053322_smartnes_complaint" type="collection">
+        <element label="Severity" max_length="40" name="severity" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="3" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="1" value="low"/>
+                <element inactive_on_update="false" label="Emergency" sequence="4" value="emergency"/>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="medium"/>
+            </choice>
+        </element>
+        <element label="Preferred Service Time" max_length="40" name="preferred_time" type="glide_date_time"/>
+        <element label="Resolved At" max_length="40" name="resolved_at" type="glide_date_time"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Priority" max_length="20" name="priority" type="string"/>
+        <element label="Reopen Count" max_length="40" name="reopen_count" type="integer"/>
+        <element label="Assigned Technician" max_length="100" name="assigned_to" type="string"/>
+        <element label="Feedback" max_length="4000" name="feedback" type="string"/>
+        <element label="First Time Fix" max_length="40" name="first_time_fix" type="boolean"/>
+        <element label="Status" max_length="20" name="status" type="string"/>
+        <element label="Resident Name" max_length="100" name="resident_name" type="string"/>
+        <element label="Emergency SOS" max_length="40" name="emergency" type="boolean"/>
+        <element label="Rating" max_length="40" name="rating" type="integer"/>
+        <element label="Related Asset" max_length="32" name="asset_ref" reference="x_2053322_smartnes_asset" type="reference"/>
+        <element label="Resolution Notes" max_length="4000" name="resolution_notes" type="string"/>
+        <element label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Security" sequence="6" value="security"/>
+                <element inactive_on_update="false" label="Civil / Building" sequence="7" value="civil"/>
+                <element inactive_on_update="false" label="Plumbing" sequence="1" value="plumbing"/>
+                <element inactive_on_update="false" label="HVAC" sequence="3" value="hvac"/>
+                <element inactive_on_update="false" label="Electrical" sequence="2" value="electrical"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
+                <element inactive_on_update="false" label="Lift" sequence="4" value="lift"/>
+                <element inactive_on_update="false" label="Cleaning" sequence="5" value="cleaning"/>
+            </choice>
+        </element>
+        <element label="Location (Block/Flat)" max_length="100" name="location" type="string"/>
+        <element label="Title" max_length="100" name="title" type="string"/>
+        <index name="index">
+            <element name="asset_ref"/>
+        </index>
+    </element>
+</database>
