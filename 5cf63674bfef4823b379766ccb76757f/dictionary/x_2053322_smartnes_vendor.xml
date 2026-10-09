@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="645e9ce6c3e78310aa55f3ddd401312f" label="Vendor" max_length="40" name="x_2053322_smartnes_vendor" type="collection">
+        <element label="Email" max_length="100" name="email" type="string"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Contact Name" max_length="100" name="contact_name" type="string"/>
+        <element label="Category" max_length="50" name="category" type="string"/>
+        <element label="Phone" max_length="50" name="phone" type="string"/>
+        <element label="Address" max_length="255" name="address" type="string"/>
+        <element label="Approved" max_length="40" name="approved" type="boolean"/>
+        <element label="Vendor Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

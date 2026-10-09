@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="smartnest">5cf63674bfef4823b379766ccb76757f</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-09-28 23:00:00</sys_created_on>
+        <sys_id>afd757a6c3afc310aa55f3ddd401314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideRecord.insert</sys_name>
+        <sys_package display_value="smartnest" source="x_2053322_smartnes">5cf63674bfef4823b379766ccb76757f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="smartnest">5cf63674bfef4823b379766ccb76757f</sys_scope>
+        <sys_update_name>sys_scope_privilege_afd757a6c3afc310aa55f3ddd401314f</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-09-28 23:00:00</sys_updated_on>
+        <target_name>GlideRecord.insert</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

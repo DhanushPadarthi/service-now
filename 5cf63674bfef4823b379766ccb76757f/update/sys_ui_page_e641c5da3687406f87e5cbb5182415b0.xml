@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category/>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_2053322_smartnes_smartnest.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+  <html>
+    <head>
+      <title>SmartNest - Society Management</title>
+      <style>
+        body { font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: white; text-align: center; padding: 50px; margin: 0; }
+        .container { max-width: 1200px; margin: auto; }
+        .card { background: rgba(255, 255, 255, 0.1); padding: 30px; margin: 20px; border-radius: 16px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.3); display: inline-block; width: 20%; min-width: 200px; cursor: pointer; transition: all 0.3s ease; vertical-align: top; }
+        .card:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.2); }
+        h1 { color: #38bdf8; font-size: 3em; margin-bottom: 10px; }
+        p { color: #cbd5e1; font-size: 1.2em; margin-bottom: 40px; }
+        h3 { color: #e0f2fe; margin-top: 0; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Welcome to SmartNest</h1>
+        <p>Intelligent Society Operations & Maintenance Platform</p>
+        
+        <div class="card" onclick="window.location.href='/x_2053322_smartnes_smartnest_resident.do'">
+          <h3>Resident Portal</h3>
+          <p style="font-size: 0.9em; margin-bottom: 0;">Raise complaints & track progress</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/x_2053322_smartnes_smartnest_manager.do'">
+          <h3>Facility Manager</h3>
+          <p style="font-size: 0.9em; margin-bottom: 0;">Monitor SLAs & assign tasks</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/x_2053322_smartnes_smartnest_technician.do'">
+          <h3>Technician App</h3>
+          <p style="font-size: 0.9em; margin-bottom: 0;">View tasks & update status</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/now/nav/ui/home'">
+          <h3>Platform Admin</h3>
+          <p style="font-size: 0.9em; margin-bottom: 0;">System config & backend setup</p>
+        </div>
+      </div>
+    </body>
+  </html>
+</j:jelly>]]></html>
+        <name>smartnest</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:00:33</sys_created_on>
+        <sys_id>e641c5da3687406f87e5cbb5182415b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>smartnest</sys_name>
+        <sys_package display_value="smartnest" source="x_2053322_smartnes">5cf63674bfef4823b379766ccb76757f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="smartnest">5cf63674bfef4823b379766ccb76757f</sys_scope>
+        <sys_update_name>sys_ui_page_e641c5da3687406f87e5cbb5182415b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 05:00:33</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c9d9e8a2c36b8310aa55f3ddd4013157" label="Pass Validation Log" max_length="40" name="x_2053322_smartnes_pass_log" type="collection">
+        <element label="Validator" max_length="32" name="validator_user" reference="sys_user" type="reference"/>
+        <element label="Scanned Token" max_length="100" name="qr_token_scanned" type="string"/>
+        <element label="Validation Time" max_length="40" name="validation_time" type="glide_date_time"/>
+        <element label="Reason" max_length="255" name="reason" type="string"/>
+        <element label="Pass" max_length="32" name="pass_ref" reference="x_2053322_smartnes_pass" type="reference"/>
+        <element label="Result" max_length="50" name="result" type="string"/>
+        <index name="index">
+            <element name="pass_ref"/>
+        </index>
+        <index name="index2">
+            <element name="validator_user"/>
+        </index>
+    </element>
+</database>

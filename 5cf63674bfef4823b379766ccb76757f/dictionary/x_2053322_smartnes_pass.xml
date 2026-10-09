@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="38d9a8a2c36b8310aa55f3ddd40131d6" label="Society Pass" max_length="40" name="x_2053322_smartnes_pass" type="collection">
+        <element label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="Expired" sequence="2" value="expired"/>
+                <element inactive_on_update="false" label="Used" sequence="4" value="used"/>
+            </choice>
+        </element>
+        <element label="Pass Type" max_length="40" name="pass_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Service Provider" sequence="2" value="service"/>
+                <element inactive_on_update="false" label="Visitor" sequence="1" value="visitor"/>
+            </choice>
+        </element>
+        <element label="Used At" max_length="40" name="used_at" type="glide_date_time"/>
+        <element label="Visitor Phone" max_length="50" name="visitor_phone" type="string"/>
+        <element label="Single Use" max_length="40" name="single_use" type="boolean"/>
+        <element label="Valid From" max_length="40" name="valid_from" type="glide_date_time"/>
+        <element label="Resident" max_length="32" name="resident" reference="sys_user" type="reference"/>
+        <element label="Purpose" max_length="255" name="purpose" type="string"/>
+        <element label="Valid Until" max_length="40" name="valid_until" type="glide_date_time"/>
+        <element label="QR Token" max_length="100" name="qr_token" type="string"/>
+        <element label="Visitor Name" max_length="100" name="visitor_name" type="string"/>
+        <element label="Validated By" max_length="32" name="validated_by" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="resident"/>
+        </index>
+        <index name="index2">
+            <element name="validated_by"/>
+        </index>
+    </element>
+</database>

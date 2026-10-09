@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="">Uncategorized</category>
+        <collection>x_2053322_smartnes_task</collection>
+        <condition/>
+        <content_type/>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html/>
+        <digest_separator_text/>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_2053322_smartnes.task.assigned</event_name>
+        <event_parm_1>true</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type/>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item/>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>You have been assigned a new maintenance task.</p><p>Location: ${complaint_ref.location}</p><p>Please log in to the Technician Portal to accept the job.</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>SmartNest: Tech Assigned</name>
+        <omit_watermark>false</omit_watermark>
+        <order/>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>SmartNest Job Assigned: ${complaint_ref.title}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 09:02:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae2347682e07460ca1b26fa94311f654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SmartNest: Tech Assigned</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="smartnest" source="x_2053322_smartnes">5cf63674bfef4823b379766ccb76757f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="smartnest">5cf63674bfef4823b379766ccb76757f</sys_scope>
+        <sys_update_name>sysevent_email_action_ae2347682e07460ca1b26fa94311f654</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 09:02:52</sys_updated_on>
+        <sys_version/>
+        <template/>
+        <type/>
+        <weight/>
+    </sysevent_email_action>
+</record_update>

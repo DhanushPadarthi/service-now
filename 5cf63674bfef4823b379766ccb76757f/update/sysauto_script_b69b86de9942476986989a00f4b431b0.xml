@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time/>
+        <max_drift/>
+        <name>SmartNest: Preventive Maintenance Scheduler</name>
+        <offset/>
+        <offset_type/>
+        <repeat_every/>
+        <run_as/>
+        <run_as_tz/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month/>
+        <run_period/>
+        <run_start/>
+        <run_time>1970-01-01 00:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth/>
+        <script><![CDATA[
+      var assetGr = new GlideRecord('x_2053322_smartnes_asset');
+      assetGr.addQuery('maintenance_enabled', true);
+      assetGr.addQuery('next_maintenance', '<=', new GlideDateTime());
+      assetGr.query();
+      
+      while(assetGr.next()) {
+        // Duplicate Protection
+        var dupCheck = new GlideRecord('x_2053322_smartnes_task');
+        dupCheck.addQuery('asset_ref', assetGr.getUniqueValue());
+        dupCheck.addQuery('task_type', 'Preventive Maintenance');
+        dupCheck.addEncodedQuery('status!=Completed^status!=Rejected');
+        dupCheck.query();
+        
+        if (!dupCheck.hasNext()) {
+          var taskGr = new GlideRecord('x_2053322_smartnes_task');
+          taskGr.initialize();
+          taskGr.asset_ref = assetGr.getUniqueValue();
+          taskGr.task_type = 'Preventive Maintenance';
+          taskGr.status = 'New';
+          
+          // Add dummy complaint ref if schema mandates it (or we can just leave it blank since it's an Asset task)
+          // We will leave complaint_ref empty.
+          
+          taskGr.insert();
+          
+          // Fire Notification Event (To Facility Manager)
+          gs.eventQueue('x_2053322_smartnes.maintenance.due', assetGr, assetGr.getUniqueValue(), '');
+        }
+      }
+    ]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 09:29:39</sys_created_on>
+        <sys_id>b69b86de9942476986989a00f4b431b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SmartNest: Preventive Maintenance Scheduler</sys_name>
+        <sys_package display_value="smartnest" source="x_2053322_smartnes">5cf63674bfef4823b379766ccb76757f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="smartnest">5cf63674bfef4823b379766ccb76757f</sys_scope>
+        <sys_update_name>sysauto_script_b69b86de9942476986989a00f4b431b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 09:29:39</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
